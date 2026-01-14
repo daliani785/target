@@ -37,11 +37,29 @@
                             
                         </tr>
                     </thead>
-                    
+                    <tbody>
+                        <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                            <tr>
+                                <td><?= htmlspecialchars($row['bulan']); ?></td>
+                                <td><?= htmlspecialchars($row['target1']); ?></td>
+                                <td><?= htmlspecialchars($row['todo']); ?></td>
+                                <td>
+                                    <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
+                                    <a href="update.php?id=<?= urlencode($row['id']); ?>">Edit</a>
+                                </td>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
                 </table>
             </div>
 
 
+
+        <?php else: ?>
+
+            <p>Data tidak ditemukan</p>
+
+        <?php endif; ?>
 
 </body>
 
