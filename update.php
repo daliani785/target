@@ -35,7 +35,26 @@
     }
     ?>
 
-    
+    <div class="container">
+        <!-- update data -->
+        <h2>Update Data Siswa</h2>
+
+        <form method="post">
+            <label>Bulan</label>
+            <input type="date" name="bulan" value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
+
+            <label>Target</label>
+            <input type="text" name="target1" value="<?= htmlspecialchars($siswa['target1']); ?>" required>
+
+            <label>To Do</label>
+            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required>
+
+            <input type="submit" name="update" value="Update">
+        </form>
+
+        <br>
+        <a href="view-data.php"><button>Kembali</button></a>
+    </div>
 
 </body>
 
