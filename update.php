@@ -37,7 +37,7 @@
 
     <div class="container">
         <!-- update data -->
-        <h2>Update Data Siswa</h2>
+        <h2>Update</h2>
 
         <form method="post">
             <label>Bulan</label>
