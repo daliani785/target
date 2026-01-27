@@ -49,7 +49,11 @@
             <label></label>
             <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required><br><br>
 
-            <input type="submit" name="update" value="Update">
+            <!-- <input type="submit" name="update" value="Update"> -->
+            <div class="btn-center">
+                <input type="submit" name="update" value="Update">
+            </div>
+
         </form>
 
         <br>

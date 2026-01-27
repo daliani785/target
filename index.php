@@ -22,13 +22,16 @@
         <!-- form inputan -->
         <form action="prosesinput.php" method="post">
             <label>Bulan</label><br> 
-            <input type="date" name="bulan">
+            <input type="date" name="bulan"  required>
             <label></label>
-            <input type="text" placeholder="Target" name="target1">
+            <input type="text" placeholder="Target" name="target1"  required>
             <label></label>
-            <input type="text" placeholder="To Do"name="todo"><br><br>
+            <input type="text" placeholder="To Do"name="todo"  required><br><br>
 
-            <input type="submit" value="Kirim">
+            <div class="btn-center">
+                <input type="submit" value="Kirim">
+            </div>
+
         </form>
 
     </div>
