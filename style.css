@@ -1,15 +1,43 @@
-table, th, td {
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #cfe7ff, #eaf2ff);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  width: 900px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+p {
+  color: #c97979;
+  margin-bottom: 25px;
+}
+
+/* table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
-}
+} */
 
-.container{
-    /* table ditengah */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+/* .container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ } */
 
-
-
+/* table ditengah */
