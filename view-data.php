@@ -5,7 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lihat Data</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="cssnya/style.css"> -->
+     <style>
+        
+        table,
+        th,
+        td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        } 
+
+        .container {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        }
+
+     </style>
 </head>
 
 <body>
@@ -25,7 +43,7 @@
         <!-- tombol kembali ke halaman input data -->
         <a href="index.php"><button> Kembali</button></a>
     </div>
-    
+
     <?php
     if (mysqli_num_rows($result) > 0): ?>
         <div class="container">

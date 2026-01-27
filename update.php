@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Data</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssnya/style.css">
 </head>
 
 <body>
@@ -35,23 +35,24 @@
     }
     ?>
 
-    <div class="container">
+    <div class="card">
         <!-- update data -->
         <h2>Update</h2>
 
         <form method="post">
-            <label>Bulan</label>
+            <label>Bulan</label><br>
             <input type="date" name="bulan" value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
 
-            <label>Target</label>
+            <label></label>
             <input type="text" name="target1" value="<?= htmlspecialchars($siswa['target1']); ?>" required>
 
-            <label>To Do</label>
-            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required>
+            <label></label>
+            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required><br><br>
 
             <input type="submit" name="update" value="Update">
         </form>
 
+        <br>
         <br>
         <a href="view-data.php"><button>Kembali</button></a>
     </div>
