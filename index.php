@@ -17,7 +17,7 @@
         <label>Bulan</label>
         <input type="date" name="bulan">
         <label>Target</label>
-        <input type="text" name="target">
+        <input type="text" name="target1">
         <label>To Do</label>
         <input type="text" name="todo">
 
