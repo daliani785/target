@@ -12,18 +12,25 @@
     // Koneksi ke database
     include 'config.php';
     ?>
-    <!-- form inputan -->
-    <form action="prosesinput.php" method="post">
-        <label>Bulan</label>
-        <input type="date" name="bulan">
-        <label>Target</label>
-        <input type="text" name="target1">
-        <label>To Do</label>
-        <input type="text" name="todo">
 
-        <input type="submit" value="Kirim">
-    </form>
+    <div class="card">
+        <h1>My Target Planner</h1>
+        <p>Mudahkan dengan mencatat setiap targetmu</p>
 
+        <!-- form inputan -->
+        <form action="prosesinput.php" method="post">
+            <label>Bulan</label>
+            <input type="date" name="bulan"><br><br>
+            <label>Target</label>
+            <input type="text" name="target1"><br><br>
+            <label>To Do</label>
+            <input type="text" name="todo"><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+    </div>
+    
 </body>
 
 </html>

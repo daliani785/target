@@ -20,10 +20,12 @@
     $sql = "SELECT * FROM tbtarget";
     $result = mysqli_query($koneksi, $sql);
     ?>
+
     <div class="container">
         <!-- tombol kembali ke halaman input data -->
         <a href="index.php"><button> Kembali</button></a>
     </div>
+    
     <?php
     if (mysqli_num_rows($result) > 0): ?>
         <div class="container">
