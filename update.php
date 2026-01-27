@@ -21,9 +21,9 @@
 
     // proses update
     if (isset($_POST['update'])) {
-        $nama = $_POST['bulan'];
-        $kelas = $_POST['target1'];
-        $umur = $_POST['todo'];
+        $bulan = $_POST['bulan'];
+        $target1 = $_POST['target1'];
+        $todo = $_POST['todo'];
         
 
         mysqli_query($koneksi, "UPDATE tbtarget 
