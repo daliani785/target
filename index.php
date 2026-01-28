@@ -17,7 +17,7 @@
 
     <div class="card">
         <h1>My Target Planner</h1>
-        <p>Mudahkan dengan mencatat setiap targetmu</p>
+        <p>Mudahkan urusan dengan mencatat setiap targetmu</p>
 
         <!-- form inputan -->
         <form action="prosesinput.php" method="post">

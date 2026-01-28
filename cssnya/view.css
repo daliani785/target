@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* tombol kembali */
+.back-btn {
+    background: linear-gradient(135deg, #54a1ee, #aacafe);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(176, 189, 217, 0.634);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #5f77c5;
+}
+
+/* card tabel */
+.table-card {
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.6s ease;
+}
+
+/* animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* judul */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* tabel */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.styled-table thead {
+    background: linear-gradient(135deg, #54a1ee, #aacafe);
+    color: white;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 14px;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+    transition: 0.3s;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.styled-table tbody tr:hover {
+    background: #eef2ff;
+    transform: scale(1.01);
+}
+
+/* badge bulan */
+.badge {
+    background: #e0e7ff;
+    color: #1e40af;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* tombol aksi */
+.btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin: 2px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn.edit {
+    background: #54a1ee;
+}
+
+.btn.delete {
+    background: #ef4444;
+}
+
+.btn.edit:hover {
+    background: #54a1ee;
+}
+
+.btn.delete:hover {
+    background: #dc2626;
+}

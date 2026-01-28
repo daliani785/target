@@ -6,24 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lihat Data</title>
     <!-- <link rel="stylesheet" href="cssnya/style.css"> -->
-     <style>
-        
-        table,
-        th,
-        td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        } 
-
-        .container {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        }
-
-     </style>
+     <link rel="stylesheet" href="cssnya/view.css">
+    
 </head>
 
 <body>
@@ -41,37 +25,45 @@
 
     <div class="container">
         <!-- tombol kembali ke halaman input data -->
-        <a href="index.php"><button> Kembali</button></a>
+        <a href="index.php" class="back-btn">Kembali</a>
     </div>
 
     <?php
     if (mysqli_num_rows($result) > 0): ?>
         <div class="container">
-            <div>
-                <table>
+            <div class="table-card">
+                <h2 class="title">Daftar Target</h2>
+
+                <table class="styled-table">
                     <thead>
                         <tr>
                             <th>Bulan</th>
                             <th>Target</th>
                             <th>To Do</th>
-                            
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php while ($row = mysqli_fetch_assoc($result)): ?>
                             <tr>
-                                <td><?= htmlspecialchars($row['bulan']); ?></td>
+                                <td>
+                                    <span class="badge">
+                                        <?= htmlspecialchars($row['bulan']); ?>
+                                    </span>
+                                </td>
                                 <td><?= htmlspecialchars($row['target1']); ?></td>
                                 <td><?= htmlspecialchars($row['todo']); ?></td>
                                 <td>
-                                    <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
-                                    <a href="update.php?id=<?= urlencode($row['id']); ?>">Edit</a>
+                                    <a class="btn edit" href="update.php?id=<?= urlencode($row['id']); ?>">Edit</a>
+                                    <a class="btn delete" href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
                     </tbody>
                 </table>
             </div>
+        </div>
+
 
 
 

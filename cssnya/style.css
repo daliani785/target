@@ -28,17 +28,42 @@ p {
 }
 
 input {
-    width: 30%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #bcc3dc;
-    margin-top: 5px;
-    
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bcc3dc;
+  margin-top: 5px;
+
 }
 
 .btn-center {
-    text-align: center;
+  text-align: center;
+
 }
+
+.btn-center input[type="submit"] {
+  background: linear-gradient(135deg, #54a1ee, #aacafe);
+  color: rgb(255, 255, 255);
+
+}
+/* tombol kembali */
+/* .btn-back {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-back a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-back a:hover {
+    text-decoration: underline;
+} */
+
+
+
 
 
 
@@ -58,4 +83,3 @@ td {
  } */
 
 /* table ditengah */
-

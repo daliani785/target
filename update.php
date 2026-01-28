@@ -35,19 +35,20 @@
     }
     ?>
 
+
     <div class="card">
         <!-- update data -->
-        <h2>Update</h2>
+        <h2 >Update</h2>
 
         <form method="post">
             <label>Bulan</label><br>
-            <input type="date" name="bulan" value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
+            <input type="date" name="bulan"  value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
 
             <label></label>
-            <input type="text" name="target1" value="<?= htmlspecialchars($siswa['target1']); ?>" required>
+            <input type="text" name="target1" placeholder="Target" value="<?= htmlspecialchars($siswa['target1']); ?>" required>
 
             <label></label>
-            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required><br><br>
+            <input type="text" name="todo" placeholder="To Do" value="<?= htmlspecialchars($siswa['todo']); ?>" required><br><br>
 
             <!-- <input type="submit" name="update" value="Update"> -->
             <div class="btn-center">
@@ -58,7 +59,10 @@
 
         <br>
         <br>
-        <a href="view-data.php"><button>Kembali</button></a>
+        
+            <a href="view-data.php" class="btn-back">⬅ Kembali</a>
+        
+
     </div>
 
 </body>
