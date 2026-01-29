@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Target </title>
+    <title>Target</title>
     <link rel="stylesheet" href="cssnya/style.css">
     
 </head>
